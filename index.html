@@ -1,0 +1,218 @@
+<!DOCTYLE html>
+<html>
+   <head>
+     <title>
+       FIRST PAGE  
+     </title>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">  
+     
+     <style>
+         .icons {
+             font-size: 26px;
+             color: white;
+         }
+         
+         
+         .item_size{
+             font-size: 12px;
+             text-align: center;
+             vertical-align: middle;
+         }
+         
+         .user-icon{
+             font-size: 50px;
+         }
+         
+         .center{
+            
+             vertical-align:middle;
+         }
+         .icon {
+/*                  position: relative;*/
+                  top: 5px;
+                  left: 5px;
+            
+         }
+        
+         .no-padding{
+             padding: 0px;
+         }
+         
+         .user-padding{
+             padding-left: 20px;
+             padding-right: 20px;
+         }
+         .nav-bar-padding{
+             padding-top: 0;
+             padding-bottom: 0;
+         }
+         #left-col {
+            background-color:#29985D;
+            width: 100px;
+            height: 100%;
+            text-align: center;
+            padding-top: 36px;
+/*            position: fixed;*/
+            z-index: 100;
+            overflow: auto;
+             float: left;
+         }
+         .left-col-padding{
+             padding: 20px 0px;
+            
+         }
+    
+         body{
+             background-image: url("gray.jpg");
+             background-size: auto;
+         }
+         .lc{
+             color: aliceblue;
+         }
+         .lc:hover{
+             color: white;
+         }
+         .btn {
+         
+          border: none;
+          color: black;
+          text-align: center;
+         border-bottom:1px solid white ;
+           } 
+
+        .btn:hover {
+        
+          background-color: black;
+          color: white;
+        }
+         .but{
+             background-color:#29985D; 
+             border: 0;
+             padding: 5 80;
+             cursor: pointer;
+         }
+         .reg{
+             /*margin-top: auto;
+             margin-left: auto;
+             margin-right: auto;*/
+              position:fixed;
+              top: 20%;
+              right: 5%;
+             padding-top: 50px;
+             padding-bottom: 50px;
+             float: right;
+             background-color:white;
+             text-align: center;
+             /*line-height: 10;
+             box-sizing: border-box;
+             font-weight: 100;*/
+             font-family: 'Helvetica Neue', 'Open Sans Pro', 'Arial', sans-serif;
+         }
+         .email{
+             padding: 10 10;
+             width: 100%;
+         }
+         .pass{
+            padding-left: 10px; width: 97%;
+         }
+         .submit{
+             padding: 10 10;
+            
+         }
+        
+    </style>
+   </head>
+   
+   <body>
+     
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-bar-padding">
+         
+           <a class="navbar-brand" href="#">
+    <img src="./logo.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
+    LOGO
+  </a>
+       
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="navbar-item item_size icon ">
+                    <i class="fa fa-cog icons" aria-hidden="true"></i>
+                    <a href ="#" class="nav-link no-padding"> Setting </a>
+                </li> 
+                
+                <li class="navbar-item item_size icon ">
+                    <i class="fa fa-user icons" aria-hidden="true"></i>
+                    <a href ="#" class="nav-link no-padding "> Profile </a>
+                </li>
+                
+                <li class="navbar-item icon user-padding">
+                    <i class="fa fa-user-circle icons user-icon" aria-hidden="true"></i>
+                    
+                </li>
+                <li class="navbar-item icon"><a href ="#" class="nav-link" data-toggle="modal" data-target="#myModal"> Login </a>
+                </li>
+                <li class="navbar-item icon"><a href ="#" class="nav-link"> Sign-in </a></li>
+            </ul>
+        </div>
+        
+       </nav>
+        <div id="left-col">
+          <sidebar>
+             <nav>
+                 
+                 
+                  <ul class="navbar-nav nav-pills nav-fill" >
+                      <div class=" btn"><li class="icon left-col-padding "><a href ="#" class="nav-link lc "> ADD </a></li></div>
+                       <div class="btn" ><li class="icon left-col-padding "><a href ="#" class="nav-link lc "> UPDATE </a></li></div>
+                        <div class="btn"><li class="icon left-col-padding "><a href ="#" class="nav-link lc "> DELETE </a></li></div>
+                  </ul>
+                
+              </nav>
+          </sidebar>
+          
+      </div>
+       <div class="reg">
+          <div class="card-header">
+              <h2>Register</h2>
+          </div>
+          <div class="pt-5 px-5 pb-5">
+              <form>
+                   <div class="email"> <input class="form-control " type="email" placeholder="E-mail">
+                   </div>
+                   <div class="pass"> <input class="form-control " type="password" placeholder="Password"></div>
+                   <div class="submit"><button class="but btn-lg  " type="submit">Register</button>
+                   </div> 
+              </form>
+          </div>
+      </div>
+     
+      
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+   </body>
+</html>
+
+
+<!--signin register usersign ( name-bold ) profleicon ( profile) Seting icon(setting)-->
